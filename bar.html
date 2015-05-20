@@ -1,0 +1,75 @@
+<style type="text/css">
+    @import url("http://fonts.googleapis.com/css?family=Open+Sans:300,600");
+    @import url("http://fonts.googleapis.com/css?family=Mr+Dafoe");
+    .fncy-prox-menu {
+        width: 100%;
+        min-width: 710px;
+        position: fixed;
+        display: block;
+        z-index: 2147483638;
+        top: 0;
+        left: 0;
+        background: #3498db;
+        padding: 5px 5px 5px 5px
+    }
+    .fncy-prox-menu-form {
+        width: 80%;
+        position: relative;
+    }
+    .fncy-prox-menu form {
+    	background: #FFF;
+    	display: inline;
+		    vertical-align: middle;
+    }
+    .fncy-prox-menu h1 {
+    	font-family: 'Mr Dafoe', cursive;
+    	width: 5%;
+		color: #FFF;
+		display: inline;
+		padding-left: 5px;
+		margin-right: 5%;
+    }
+    .fncy-prox-menu input {
+        width: 65%;
+        padding: 10px;
+        color: #d9d9d9;
+        font-size: 20px;
+        border: none;
+        background: #FFF;
+        margin: 0px;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 600;
+        -webkit-appearance: none;
+    }
+    .fncy-prox-menu input:focus {
+        color: #474747;
+        outline: none;
+        font-family: 'Open Sans', sans-serif;
+    }
+    .fncy-prox-menu input[type="submit"] {
+        background: #7f8c8d;
+        padding: 10px;
+        color: #FFF;
+        cursor: pointer;
+        width: 15%;
+        font-size: 20px;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 600;
+        position: fixed;
+		float: left;
+        -webkit-transition: all 0.3s;
+    }
+    .fncy-prox-menu input[type="submit"]:hover {
+        background: #95a5a6;
+    }
+</style>
+<div class="fncy-prox-menu">
+    <div id="form" class="fncy-prox-menu-form">
+    	<h1>Fancy Prox</h1>
+        <form id="form_wrapper" action="" method="get">
+            <input placeholder="Please enter the website URL" value="" type="text" id="url_entry" name="url" tabindex="2" required>
+            <input type="submit" id="go_button" value="Connect">
+        </form>
+    </div>
+</div>
+<div style="height: 58px;"></div>
