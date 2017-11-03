@@ -3,7 +3,7 @@ A in-browser proxy designed to bypass firewalls. It also supports larger caching
 
 ### How does it work?
 
-The application is truely simple but comes with certain limitations. First the website will take any **get** requests from the client and then replicate the same request on the server side, relaying those results back with minor changes. Anything that contains an easily disconverable URL will be replaced with a new relative URL pointg to the proxy. Any images/multimedia content will be cached on the server to enable faster loading on something like a reload. Any request that generally contains senstive data like **post** are rejected to protected user privacy. 
+The application is truly simple but comes with certain limitations. First the website will take any **get** requests from the client and then replicate the same request on the server side, relaying those results back with minor changes. Anything that contains an easily discoverable URL will be replaced with a new relative URL ponting  to the proxy. Any images/multimedia content will be cached on the server to enable faster loading on something like a reload. Any request that generally contains sensitive data like **post** are rejected to protected user privacy. 
 
 #### What makes it different?
 
@@ -16,7 +16,17 @@ The application is truely simple but comes with certain limitations. First the w
 * Data is not encrypted with HTTPS making it public
 * Any urls loaded through javascript (ReactJS heavy website) end up crashing
 
+### Features
+
+- [x] General Proxy Support
+- [x] Loading large images
+- [x] URL Modification
+- [x] Webpage Path Obfuscation
+- [ ] HTTPS Support
+- [ ] Javascript URL modification
+
 ### Libraries Used
 
 * [App Engine](https://cloud.google.com/appengine/) - Hosting and caching support
 * [Beautiful Soup](https://www.crummy.com/software/BeautifulSoup/) - Website scraping and modification
+
