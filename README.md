@@ -1,23 +1,22 @@
-FancyProx
-
+# FancyProx
 A in-browser proxy designed to bypass firewalls. It also supports larger caching enabling sites that have been loaded once to have a faster response time. This is all built to run on google appspot
 
-How does it work?
+### How does it work?
 
-The application is truely simple but comes with certain limitations. First the website will take any get requests from the client and then replicate the same request on the server side, relaying those results back with minor changes. Anything that contains an easily disconverable URL will be replaced with a new relative URL pointg to the proxy. Any images/multimedia content will be cached on the server to enable faster loading on something like a reload. Any request that generally contains senstive data like post are rejected to protected user privacy. 
+The application is truely simple but comes with certain limitations. First the website will take any **get** requests from the client and then replicate the same request on the server side, relaying those results back with minor changes. Anything that contains an easily disconverable URL will be replaced with a new relative URL pointg to the proxy. Any images/multimedia content will be cached on the server to enable faster loading on something like a reload. Any request that generally contains senstive data like **post** are rejected to protected user privacy. 
 
-What makes it different?
+#### What makes it different?
 
 - The caching system enables faster loading
 - Pages are generally better preserved on FancyProx versus other proxies
 - The proxy is completely free and hides possible firewall trigger-words 
 
-Limitations
+#### Limitations 
 
-- Data is not encrypted with HTTPS making it public
-- Any urls loaded through javascript (ReactJS heavy website) end up crashing
+* Data is not encrypted with HTTPS making it public
+* Any urls loaded through javascript (ReactJS heavy website) end up crashing
 
-Libraries Used
+### Libraries Used
 
-- App Engine - Hosting and caching support
-- Beautiful Soup - Website scraping and modification
+* [App Engine](https://cloud.google.com/appengine/) - Hosting and caching support
+* [Beautiful Soup](https://www.crummy.com/software/BeautifulSoup/) - Website scraping and modification
